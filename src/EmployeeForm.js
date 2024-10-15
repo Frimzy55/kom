@@ -13,13 +13,13 @@ const EmployeeForm = () => {
     <div className="container-fluid d-flex justify-content-center align-items-center vh-100">
       <div 
         className="border rounded overflow-auto" 
-        style={{ maxHeight: '80vh', width: '400px', backgroundColor: '#ADD8E6' }} // Light blue background for the form container
+        style={{ maxHeight: '80vh', width: '400px', backgroundColor: '#e1f1fd' }} // Light blue background for the form container
       >
-        <div className="text-center mb-3" style={{ backgroundColor: '#ADD8E6', padding: '10px' }}>
+        <div className="text-center mb-3" style={{ backgroundColor: '#e1f1fd', padding: '10px' }}>
           <h1 className="text-center mb-4">Presbyterian Hospital, Kom</h1>
           <img src={logo} alt="Hospital Logo" className="img-fluid" style={{ maxHeight: '100px', width: 'auto' }} />
         </div>
-        <form onSubmit={handleSubmit} className="p-4" style={{ backgroundColor: '#ADD8E6' }}>
+        <form onSubmit={handleSubmit} className="p-4" style={{ backgroundColor: '#e1f1fd' }}>
           <h4 className="text-center mb-4">Staff Information</h4>
 
           <div className="mb-3">
