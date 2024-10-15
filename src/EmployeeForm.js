@@ -1,5 +1,4 @@
 import React from 'react';
-//import logo from '../assets/komlogo.jpeg'; // Adjust the path to your logo file
 import logo from './assets/pres.png'; // Ensure this path is correct relative to your EmployeeForm.js file
 
 const EmployeeForm = () => {
@@ -11,16 +10,17 @@ const EmployeeForm = () => {
   };
 
   return (
-    <div className="container-fluid d-flex justify-content-center align-items-center vh-100" >
-      <div className="border rounded bg-light overflow-auto" style={{ maxHeight: '80vh', width: '400px', backgroundColor: '#ADD8E6' }} >
-        <div className="text-center mb-3" >
+    <div className="container-fluid d-flex justify-content-center align-items-center vh-100">
+      <div 
+        className="border rounded overflow-auto" 
+        style={{ maxHeight: '80vh', width: '400px', backgroundColor: '#ADD8E6' }} // Light blue background for the form container
+      >
+        <div className="text-center mb-3" style={{ backgroundColor: '#ADD8E6', padding: '10px' }}>
           <h1 className="text-center mb-4">Presbyterian Hospital, Kom</h1>
           <img src={logo} alt="Hospital Logo" className="img-fluid" style={{ maxHeight: '100px', width: 'auto' }} />
         </div>
-        <form onSubmit={handleSubmit} className="p-4">
+        <form onSubmit={handleSubmit} className="p-4" style={{ backgroundColor: '#ADD8E6' }}>
           <h4 className="text-center mb-4">Staff Information</h4>
-
-          {/* Other fields like Full Name, Date of Birth, etc. */}
 
           <div className="mb-3">
             <label className="form-label">Full Name</label>
